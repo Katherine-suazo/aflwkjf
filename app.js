@@ -11,7 +11,7 @@ let datos = ["Ana", "Pablo", "Carlos"]
 
 let edades = [23, 17, 44, 15]
 
-let objetoDatos={
+let objetoDatos = {
     nombre: "Ana",
     edad: 25,
     cuenta: "Alumno",
@@ -69,7 +69,7 @@ switch (tipoAlumno){
 
 // cliclo While
 
-/* Mostrar los primeros 10 numeros positivos */
+// Mostrar los primeros 10 numeros positivos
 let numero = 1;
 
 while(numero < 10){
@@ -94,23 +94,39 @@ mensaje()
 
 //Nota: if (numero % 2 == 0) numeros primos
 
-/* Muestre la cantidad de numeros pares que existen dentro de un arreglo
-use una funcion si el numero es par o no */
+//Muestre la cantidad de numeros pares que existen dentro de un arreglo
+//use una funcion si el numero es par o no
 
 let numeros = [45, 33, 14, 23, 20, 4, 7, 12, 68, 3]
 let contP = 0
 
 function es_par(num){
-    if(numero % 2 == 0){
+    if(num % 2 == 0)
         return true
-    }
     return false
 }
 
-for (let i=0; i<numeros.length; i++){
+for (let i=0 ; i<numeros.length ; i++){
     if (es_par(numeros[i]))
         contP++
 }
+
 console.log("Los pares son ", contP)
 
 //Modifique el ejercicio para mostrar la cantidad de impares
+
+let num = [45, 33, 14, 23, 20, 4, 7, 12, 68, 3, 9]
+let contI = 0
+
+function es_impar(num){
+    if(num % 2 != 0)
+        return true
+    return false
+}
+
+for (let i=0 ; i<num.length ; i++){
+    if (es_impar(num[i]))
+        contI++
+}
+
+console.log("Los impares son ", contI)
